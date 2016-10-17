@@ -1,0 +1,45 @@
+<html>
+
+<head></head>
+
+<body>
+
+<h1> Welcome! </h1>
+
+<script type= "text/javascript">
+
+function printTheArray(arrayName) {
+
+	for (var i = 0; i < arrayName.length; i++) {
+	
+	document.write(arrayName[i]);
+	}
+}
+
+var nowTime = new Date();
+
+document.write(nowTime +"<br/>" );
+
+var name = prompt("Enter your Name:", "");
+
+document.write("Hello " +name+"!" +"<br/>" );
+
+
+
+var myArray = new Array(4);
+
+for (var i = 0; i < 4; i++) {
+	myArray[i] = prompt("Enter "+(i+1)+" Number", "");
+}
+
+printTheArray(myArray);
+myArray.sort();
+var string1 = myArray.join();
+document.write(string1); 
+
+
+</script>
+
+
+</body>
+</html>
